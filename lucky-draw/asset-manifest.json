@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/lucky-draw/static/css/main.fd9e41e2.css",
+    "main.js": "/lucky-draw/static/js/main.d87bc1d5.js",
+    "index.html": "/lucky-draw/index.html",
+    "main.fd9e41e2.css.map": "/lucky-draw/static/css/main.fd9e41e2.css.map",
+    "main.d87bc1d5.js.map": "/lucky-draw/static/js/main.d87bc1d5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fd9e41e2.css",
+    "static/js/main.d87bc1d5.js"
+  ]
+}
