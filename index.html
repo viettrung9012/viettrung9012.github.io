@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+  <meta charset="utf-8">
   <!-- Google Tag Manager -->
   <script>(function (w, d, s, l, i) {
       w[l] = w[l] || []; w[l].push({
@@ -13,11 +14,65 @@
     })(window, document, 'script', 'dataLayer', 'GTM-M2XLG4BW');
   </script>
   <!-- End Google Tag Manager -->
-  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Welcome to my page!</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.2/css/bulma.min.css">
+  <title>Viet Trung Truong · Software Engineer | Data Science</title>
+  <meta name="description"
+    content="Viet Trung Truong is a software engineer with 10 years of experience, now working as a data scientist in Hanoi, Vietnam. Previously at LINE, Traveloka and Expedia.">
+  <link rel="canonical" href="https://www.viettrung.xyz/">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#13161f" media="(prefers-color-scheme: dark)">
+
+  <!-- Social previews -->
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://www.viettrung.xyz/">
+  <meta property="og:title" content="Viet Trung Truong · Software Engineer | Data Science">
+  <meta property="og:description"
+    content="Software engineer with 10 years of experience, now working as a data scientist. Previously at LINE, Traveloka and Expedia.">
+  <meta property="og:image" content="https://www.viettrung.xyz/assets/img/avatar.jpg">
+  <meta property="og:image:width" content="480">
+  <meta property="og:image:height" content="480">
+  <meta property="og:image:alt" content="Portrait of Viet Trung Truong">
+  <meta property="profile:first_name" content="Viet Trung">
+  <meta property="profile:last_name" content="Truong">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/avatar.jpg">
+
+  <!-- Apply a saved light/dark choice before first paint to avoid a flash; see assets/js/site.js -->
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+      } catch (e) { /* storage unavailable: follow the system setting */ }
+    })();
+  </script>
+
+  <!-- Pico CSS v2 (jade theme), https://picocss.com -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.1.1/css/pico.jade.min.css"
+    integrity="sha384-9eWBRFENYDQF0oSd2bdDvnE6+jPkxkGjSXpeEJVzODxNnyhyd3wh5T+/3KJ+NHOo" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <script src="assets/js/site.js" defer></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Viet Trung Truong",
+    "url": "https://www.viettrung.xyz/",
+    "image": "https://www.viettrung.xyz/assets/img/avatar.jpg",
+    "jobTitle": "Data Scientist",
+    "worksFor": { "@type": "Organization", "name": "Paved Digital", "url": "https://paveddigital.com/" },
+    "address": { "@type": "PostalAddress", "addressLocality": "Hanoi", "addressCountry": "VN" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "National University of Singapore" },
+    "sameAs": [
+      "https://www.linkedin.com/in/viettrung9012",
+      "https://github.com/viettrung9012"
+    ]
+  }
+  </script>
 </head>
 
 <body>
@@ -27,36 +82,348 @@
       style="display:none;visibility:hidden"></iframe>
   </noscript>
   <!-- End Google Tag Manager (noscript) -->
-  <section class="section">
-    <div class="container">
-      <div class="columns">
-        <div class="column is-one-third">
 
-          <div class="card">
-            <div class="card-image">
-              <figure class="image is-4by3">
-                <img src="Poliwhirl.png" alt="Placeholder image">
-              </figure>
-            </div>
-            <div class="card-content">
-              <div class="media">
-                <div class="media-content">
-                  <p class="title is-4">Trung</p>
-                  <p class="subtitle is-6">@viettrung9012</p>
-                </div>
-              </div>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-              <div class="content">
-                Newbie developer with some basic knowledge about front-end and back-end.
-                <a href="#">#javascript</a> <a href="#">#java</a>
-              </div>
-            </div>
-          </div>
+  <header class="site-header">
+    <nav class="container" aria-label="Main">
+      <ul>
+        <li><a href="#top" class="brand">Viet Trung Truong</a></li>
+      </ul>
+      <ul>
+        <li class="nav-section"><a href="#experience">Experience</a></li>
+        <li class="nav-section"><a href="#skills">Skills</a></li>
+        <li class="nav-section"><a href="#certifications">Certifications</a></li>
+        <li class="nav-section"><a href="#contact">Contact</a></li>
+        <li>
+          <button type="button" id="theme-toggle" class="theme-toggle" hidden aria-label="Toggle dark theme">
+            <svg class="icon icon-moon" aria-hidden="true"><use href="assets/img/icons.svg#fa-moon"></use></svg>
+            <svg class="icon icon-sun" aria-hidden="true"><use href="assets/img/icons.svg#fa-sun"></use></svg>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
+  <main id="main" class="container">
+    <!-- Intro -->
+    <section id="top" class="hero" aria-labelledby="name">
+      <picture>
+        <source srcset="assets/img/avatar.webp" type="image/webp">
+        <img class="avatar" src="assets/img/avatar.jpg" alt="Portrait of Viet Trung Truong" width="480"
+          height="480">
+      </picture>
+      <div class="hero-text">
+        <h1 id="name">Viet Trung Truong</h1>
+        <p class="headline">Software Engineer | Data Science</p>
+        <p class="location">
+          <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#fa-location-dot"></use></svg>
+          Hanoi, Vietnam
+        </p>
+        <p class="intro">
+          Software engineer with 10 years of experience, mostly in web and backend development, now working as a
+          data scientist. I turn complex datasets into dashboards, audits and automations that help teams make
+          better decisions. Previously at LINE, Traveloka and Expedia.
+        </p>
+        <div class="actions">
+          <a role="button" href="https://www.linkedin.com/in/viettrung9012" rel="me noopener">
+            <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#fa-linkedin"></use></svg>
+            LinkedIn
+          </a>
+          <a role="button" class="secondary outline" href="https://github.com/viettrung9012" rel="me noopener">
+            <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#fa-github"></use></svg>
+            GitHub
+          </a>
+          <!-- The address is assembled by assets/js/site.js to keep it away from simple scrapers. -->
+          <a role="button" class="secondary outline" href="#contact" data-email="moc.liamg@2109gnurtteiv">
+            <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#fa-envelope"></use></svg>
+            Email
+          </a>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" aria-labelledby="experience-title">
+      <h2 id="experience-title">Experience</h2>
+      <ol class="timeline">
+        <li class="job">
+          <div class="job-head">
+            <h3>Paved Digital</h3>
+            <p class="job-meta">Remote</p>
+          </div>
+          <ul class="roles">
+            <li><span class="role">Data Scientist</span> <span class="dates"><time datetime="2026-02">Feb 2026</time> – Present</span></li>
+          </ul>
+          <ul class="points">
+            <li>Exploratory data analysis, automation and data systems architecture.</li>
+            <li>From executive dashboards to full data audits, turning complex datasets into actionable insights
+              that connect business objectives with scalable data solutions.</li>
+          </ul>
+        </li>
+
+        <li class="job">
+          <div class="job-head">
+            <h3>Self-employed</h3>
+            <p class="job-meta">Remote</p>
+          </div>
+          <ul class="roles">
+            <li><span class="role">Data Scientist</span> <span class="dates"><time datetime="2025-08">Aug 2025</time> – <time datetime="2026-02">Feb 2026</time></span></li>
+          </ul>
+        </li>
+
+        <li class="job">
+          <div class="job-head">
+            <h3>Niteco</h3>
+            <p class="job-meta">Hanoi, Vietnam</p>
+          </div>
+          <ul class="roles">
+            <li><span class="role">Data &amp; Analytics Team Lead</span> <span class="dates"><time datetime="2025-02">Feb 2025</time> – <time datetime="2025-07">Jul 2025</time></span></li>
+          </ul>
+          <ul class="points">
+            <li>Led the data &amp; analytics team: website and data audits, event-tracking implementation, and
+              reporting and analysis for clients.</li>
+            <li>Built dashboards and automations for reporting and data synchronisation, and set up the team’s
+              documentation and processes.</li>
+          </ul>
+        </li>
+
+        <li class="job">
+          <div class="job-head">
+            <h3>LINE Technology Vietnam</h3>
+            <p class="job-meta">Hanoi, Vietnam</p>
+          </div>
+          <ul class="roles">
+            <li><span class="role">Project Lead</span> <span class="dates"><time datetime="2023-11">Nov 2023</time> – <time datetime="2025-02">Feb 2025</time></span></li>
+            <li><span class="role">Software Engineer</span> <span class="dates"><time datetime="2022-01">Jan 2022</time> – <time datetime="2025-02">Feb 2025</time></span></li>
+          </ul>
+          <ul class="points">
+            <li>Maintained and improved the internal build and deployment tooling used across LINE engineering
+              teams, with zero outages since 2022.</li>
+            <li>Built a DORA-metrics dashboard combining build, version-control, code-analysis and
+              project-management data, and presented it at the LY Corporation Tech Conference in Tokyo (2024).</li>
+            <li>Managed the project team’s priorities and resources, drove engineering-practice decisions, and
+              ran technical workshops and sharing sessions.</li>
+          </ul>
+        </li>
+
+        <li class="job">
+          <div class="job-head">
+            <h3>Traveloka</h3>
+            <p class="job-meta">Singapore</p>
+          </div>
+          <ul class="roles">
+            <li><span class="role">Associate Engineering Manager</span> <span class="dates"><time datetime="2021-08">Aug 2021</time> – <time datetime="2021-12">Dec 2021</time></span></li>
+            <li><span class="role">Software Engineer</span> <span class="dates"><time datetime="2020-11">Nov 2020</time> – <time datetime="2021-07">Jul 2021</time></span></li>
+          </ul>
+          <ul class="points">
+            <li>Co-led the launch of Southeast Asia’s first PayLater “Virtual Card Number” with Bank Negara
+              Indonesia, letting PayLater customers pay at online merchants
+              (<a href="https://www.traveloka.com/en-id/explore/news/lifestyle-superapp-traveloka-expands-its-financial-services-offering-and-partners-with-bank-negara-indonesia-for-southeast-asias-first-paylater-virtual-card-number/94581"
+                rel="noopener">press release<svg class="icon icon-ext" aria-hidden="true"><use href="assets/img/icons.svg#fa-arrow-up-right-from-square"></use></svg></a>).</li>
+            <li>Led engineers in the PayLater acquisition domain across microservices, stakeholder planning,
+              technical interviews and delivery, including a risk-scoring API integration and application-form
+              UX improvements.</li>
+          </ul>
+        </li>
+
+        <li class="job">
+          <div class="job-head">
+            <h3>HREasily</h3>
+            <p class="job-meta">Singapore</p>
+          </div>
+          <ul class="roles">
+            <li><span class="role">Senior Software Engineer</span> <span class="dates"><time datetime="2020-04">Apr 2020</time> – <time datetime="2020-11">Nov 2020</time></span></li>
+          </ul>
+          <ul class="points">
+            <li>Led a team of developers building an employee-benefits platform where partners publish products
+              and services, and companies subscribe their staff to benefits such as insurance, healthcare and
+              leisure.</li>
+          </ul>
+        </li>
+
+        <li class="job">
+          <div class="job-head">
+            <h3>Expedia Group</h3>
+            <p class="job-meta">Singapore</p>
+          </div>
+          <ul class="roles">
+            <li><span class="role">Software Development Engineer 1</span> <span class="dates"><time datetime="2018-03">Mar 2018</time> – <time datetime="2020-04">Apr 2020</time></span></li>
+            <li><span class="role">Associate Software Development Engineer</span> <span class="dates"><time datetime="2016-07">Jul 2016</time> – <time datetime="2018-03">Mar 2018</time></span></li>
+            <li><span class="role">Software Development Engineer Intern</span> <span class="dates"><time datetime="2015-05">May 2015</time> – <time datetime="2015-12">Dec 2015</time></span></li>
+          </ul>
+          <ul class="points">
+            <li>Localisation and customer-acquisition features across Expedia sites: development lead for rolling
+              out English to 16 points of sale, main contributor to a traffic-optimisation project, and
+              right-to-left (Arabic) support in the UI framework.</li>
+            <li>Built core services for Expedia’s LINE Japan messaging channel and automated new-site setup and
+              platform configuration on AWS.</li>
+            <li>Organised internal learning series: Clean Code, Data Science Academy, Python for Everyone and
+              Growth Mindset seminars.</li>
+          </ul>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" aria-labelledby="skills-title">
+      <h2 id="skills-title">Skills</h2>
+      <div class="skill-groups">
+        <div>
+          <h3>Data &amp; analytics</h3>
+          <ul class="chips">
+            <li>Python</li>
+            <li>BigQuery</li>
+            <li>Looker Studio</li>
+            <li>Power BI</li>
+            <li>Metabase</li>
+            <li>Jupyter</li>
+            <li>Airbyte</li>
+            <li>Google Analytics 4</li>
+            <li>Google Tag Manager</li>
+            <li>Contentsquare</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Software engineering</h3>
+          <ul class="chips">
+            <li>Java</li>
+            <li>Kotlin</li>
+            <li>TypeScript</li>
+            <li>JavaScript</li>
+            <li>Spring Boot</li>
+            <li>Node.js</li>
+            <li>NestJS</li>
+            <li>React</li>
+            <li>GraphQL</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Databases</h3>
+          <ul class="chips">
+            <li>PostgreSQL</li>
+            <li>MySQL</li>
+            <li>MongoDB</li>
+            <li>Redis</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Infrastructure &amp; automation</h3>
+          <ul class="chips">
+            <li>AWS</li>
+            <li>Docker</li>
+            <li>Kubernetes</li>
+            <li>Terraform</li>
+            <li>Jenkins</li>
+            <li>n8n</li>
+            <li>Zapier</li>
+            <li>Power Automate</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section id="certifications" aria-labelledby="certifications-title">
+      <h2 id="certifications-title">Certifications</h2>
+      <div class="cert-groups">
+        <article>
+          <header>
+            <h3>Contentsquare</h3>
+            <p><time datetime="2026-09">Sep 2026</time></p>
+          </header>
+          <ul>
+            <li>Experience Analytics Advanced</li>
+            <li>Experience Analytics Web Fundamentals</li>
+            <li>Product Analytics Fundamentals</li>
+            <li>Voice of Customer Fundamentals</li>
+            <li>Digital Experience Monitoring</li>
+            <li>Expert in Campaign Management</li>
+          </ul>
+        </article>
+        <article>
+          <header>
+            <h3>Contentstack</h3>
+            <p><time datetime="2026-09">Sep 2026</time></p>
+          </header>
+          <ul>
+            <li>Lytics Practitioner Certification</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Speaking & recognition -->
+    <section id="recognition" aria-labelledby="recognition-title">
+      <h2 id="recognition-title">Speaking &amp; recognition</h2>
+      <ul class="plain-list">
+        <li>
+          <span class="year">2024</span>
+          <span>Presented a DORA-metrics dashboard at the LY Corporation Tech Conference, Tokyo</span>
+        </li>
+        <li>
+          <span class="year">2024</span>
+          <span>LINE Core Values award in two categories</span>
+        </li>
+        <li>
+          <span class="year">2023</span>
+          <span>Speaker at <a href="https://vietnamdevcenter.linecorp.com/vi/techtalk5/" rel="noopener">LINE Technology
+              Vietnam Tech Talk #5<svg class="icon icon-ext" aria-hidden="true"><use href="assets/img/icons.svg#fa-arrow-up-right-from-square"></use></svg></a>:
+            “Data Consistency across Microservices”</span>
+        </li>
+        <li>
+          <span class="year">2023</span>
+          <span>LINE Team of the Year and Engineering Culture Role Model awards</span>
+        </li>
+        <li>
+          <span class="year">2016</span>
+          <span>Bronze, NUS Student Achievement Awards</span>
+        </li>
+        <li>
+          <span class="year">2015</span>
+          <span>1st place, DBS Talent Hackathon Singapore</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Education -->
+    <section id="education" aria-labelledby="education-title">
+      <h2 id="education-title">Education</h2>
+      <article class="education">
+        <h3>National University of Singapore</h3>
+        <p>Bachelor of Computing (Computer Science) with Honours (Distinction), Software Engineering
+          specialisation</p>
+        <p class="muted"><time datetime="2012">2012</time> – <time datetime="2016">2016</time></p>
+      </article>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Get in touch</h2>
+      <p>Want my full résumé, or to talk about a role or project? Reach out on LinkedIn or by email.</p>
+      <div class="actions">
+        <a role="button" href="https://www.linkedin.com/in/viettrung9012" rel="noopener">
+          <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#fa-linkedin"></use></svg>
+          Message on LinkedIn
+        </a>
+        <a role="button" class="secondary outline" href="#contact" data-email="moc.liamg@2109gnurtteiv">
+          <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#fa-envelope"></use></svg>
+          Send an email
+        </a>
+      </div>
+      <noscript>
+        <p class="muted">Email: viettrung9012 [at] gmail [dot] com</p>
+      </noscript>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p>
+      © <span id="year">2026</span> Viet Trung Truong ·
+      Icons by <a href="https://fontawesome.com" rel="noopener">Font Awesome</a>
+      (<a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener license">CC BY 4.0</a>)
+    </p>
+  </footer>
 </body>
 
 </html>
