@@ -33,9 +33,12 @@
 
 /* ---------- Layout ---------- */
 
-/* Narrower reading width than Pico's default containers (which grow to 1450px). */
+/* Narrower reading width than Pico's default containers (which grow to 1450px).
+   Pico drops the side padding from 576px up, assuming its own max-width leaves a margin; ours is wider
+   than the screen until about 830px, so keep the padding at every width (outside the content width). */
 .container {
-  max-width: var(--site-max-width);
+  max-width: calc(var(--site-max-width) + var(--pico-spacing) * 2);
+  padding-inline: var(--pico-spacing);
 }
 
 html {
